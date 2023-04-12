@@ -86,6 +86,16 @@ sudo cp * /usr/local/bin
 cd ~/tools
 
 echo -e "${GREEN}##################################################################${ENDCOLOR}"
+sudo cd ~/tools/
+sudo git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+
+echo -e "${GREEN}##################################################################${ENDCOLOR}"
+
+ cd ~/tools/
+sudo apt-get --assume-yes install git make gcc
+sudo git clone https://github.com/robertdavidgraham/masscan && cd masscan && sudo make
+
+echo -e "${GREEN}##################################################################${ENDCOLOR}"
 
 
 echo -e "${GREEN}I HOPE YOU WILL GET SO MUCH MONEY FROM BUG BOUNTY :-)${ENDCOLOR}"
