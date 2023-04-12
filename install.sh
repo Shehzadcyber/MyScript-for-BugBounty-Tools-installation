@@ -9,12 +9,12 @@ ENDCOLOR="\e[0m"
 
 echo -e "${GREEN}This Automate Script is made by ----------------${ENDCOLOR}${RED}TheRoyHunter313${ENDCOLOR}${GREEN}-----------------${ENDCOLOR}"
 
-mkdir ~/tools
+sudo mkdir ~/tools
 cd ~/tools/
 
 echo -e "${GREEN}......Downloading & Installing Go Language............"
 
-wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz && sudo tar -C /usr/local/ -xzf go1.20.2.linux-amd64.tar.gz
+sudo wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz && sudo tar -C /usr/local/ -xzf go1.20.2.linux-amd64.tar.gz
 cd ~/usr/local/ && export PATH=$PATH:/usr/local/go/bin && source ~/.bashrc
 
 echo -e "${GREEN}##################################################################${ENDCOLOR}"
@@ -27,10 +27,10 @@ go install -v github.com/tomnomnom/waybackurls@latest
 git clone https://github.com/tomnomnom/gf
 git clone https://github.com/1ndianl33t/Gf-Patterns
 
-mkdir /root/.gf
-cd ~/tools/gf/examples && cp * /root/.gf
+sudo mkdir /root/.gf
+sudo cd ~/tools/gf/examples && cp * /root/.gf
 
-cd ~/tools/Gf-Patterns && cp * /root/.gf
+sudo cd ~/tools/Gf-Patterns && cp * /root/.gf
 
 echo -e "${GREEN}##################################################################${ENDCOLOR}"
 
@@ -66,6 +66,8 @@ go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+
 
 echo -e "${GREEN}##########################################################################${ENDCOLOR}"
 
@@ -79,8 +81,8 @@ echo -e "${GREEN}###############################################################
 
 cd ~/tools/
 
-cd ~/ && cd ~/go && cd /bin 
-cp * /usr/local/bin 
+sudo cd ~/ && cd ~/go && cd /bin 
+sudo cp * /usr/local/bin 
 cd ~/tools
 
 echo -e "${GREEN}##################################################################${ENDCOLOR}"
